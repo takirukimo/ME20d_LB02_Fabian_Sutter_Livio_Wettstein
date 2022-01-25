@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Nike Shop</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+
+</head>
+<body id="top">
+  <script src="objects.js"></script>
+<!-- Main Form -->
+<div class="bgded overlay" style="background-image:url('layout/images/images2/MG_9724.png');"> 
+  <div class="wrapper row1">
+
+    <!-- Header/Title -->
+    <header id="header" class="hoc clear"> 
+      <div id="logo" class="fl_left">
+        <h1><a href="index.html">Swiss Retro Clothing Shop</a></h1>
+      </div>
+
+      <!-- Navigation Bar -->
+      <nav id="mainav" class="fl_right">
+        <ul class="clear">
+          <li class="active"><a href="index.html">Home</a></li>
+          <li><a class="drop" href="#">Pages</a>
+            <ul>
+              <li><a href="geschichte.html">Kontakt</a></li>
+            </ul>
+          </li>
+          <li><a href="https://www.instagram.com/swiss.retro/" target="_blank">Instagram</a></li>
+        </ul>
+      </nav>
+    </header>
+  </div>
+  
+  <!-- Mini Navigation -->
+  <div id="breadcrumb" class="hoc clear"> 
+    <h6 class="heading">Gallery</h6>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="geschichte.html">Kontakt</a></li>
+      <li class="current"><a>Shop</a></li>
+      
+    </ul>
+  </div>
+</div>
+
+  <!-- Mini Navigation -->
+  
+<div class="wrapper row3">
+  <main class="hoc container clear"> 
+    <div class="content"> 
+      <div id="gallery">
+        <figure>
+          <header class="heading">Unsere Aktuellen Produkte</header>
+          <ul class="nospace clear">
+            <li class="one_quarter first">
+              <p><img id="pic" src="layout/images/images2/_MG_0725.JPG" alt="Bild01" width="400"></p> The Beatles T-Shirt
+
+              <button onclick="changePicture()">Ansicht von hinten</button>
+              
+              <script>
+                let xchange = true;
+                function changePicture() {
+                  let current = document.getElementById("pic");
+            
+                  if(xchange) {
+                  current.src = "layout/images/images2/_MG_0726.JPG"
+                  xchange = false;
+                   }
+                  else {
+                 current.src = "layout/images/images2/_MG_0725.JPG"
+                 xchange = true;
+                  }
+                }
+              </script></li>
+            <li class="one_quarter"><a><img src="layout/images/images2/0BFA4E8E-12A1-4C09-B33B-3F144510834F_1_105_c.png">Quinnipiac Zipper</a></li>
+            <li class="one_quarter"><a><img src="layout/images/images2/07AC42A2-365A-4A15-BDFE-94D7DC5BD0A3_1_105_c.png">Champion T-Shirt</a></li>
+            <li class="one_quarter"><a><img src="layout/images/images2/19ADACDD-B978-4A95-87E2-303E63819F94_1_105_c.png">Champion Zipper</a></li>
+            <li class="one_quarter first"><a><img src="layout/images/images2/55FC9A3A-F0ED-4098-A67D-8E3B3C1E3F21_1_105_c.png">Polo Ralph Lauren T-Shirt</a></li>
+            <li class="one_quarter"><a><img src="layout/images/images2/0609270F-EA71-44D1-A589-4E37096E2CE6_1_105_c.png">Boston T-Shirt</a></li>
+            <li class="one_quarter"><a><img src="layout/images/images2/920BE2DE-6542-4D52-8F4B-631F4A118585_1_105_c.png">Polo Ralph Lauren Poloshirt</a></li>
+            <li class="one_quarter"><a><img src="layout/images/images2/46270E94-6133-466B-80FA-D1999F8439A7_1_105_c.png">Columbia Zipper</a></li>
+          </ul>
+          <figcaption></figcaption>
+        </figure>
+      </div>
+   
+      
+      </body>
+     
+    </div>
+    <div class="clear"></div>
+  </main>
+</div>
+<!-- End -->
+<div class="wrapper row5">
+  <div id="copyright" class="hoc clear"> 
+    <p class="fl_left">Made by Livio Wettstein und Fabian Sutter</p>
+    <p class="fl_right" onclick="location.href='#top'">Go to Start</p>
+  </div>
+</div>
+</body>
+</html>
